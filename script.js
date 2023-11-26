@@ -18,31 +18,6 @@ function getCompChoice(){
 
 //-------------------------------------------------------------
 
-function getPlayerChoice(){
-    let choice = prompt("rock, paper or scissors? ")
-
-    while(choice == null || choice == ""){
-        choice = prompt("ERROR_1(null empty): Please type rock, paper or scissors ")
-    }
-
-
-    let choiceToLower = choice.toLowerCase();
-
-    let check = validateInput(choice);
-
-    while(check == false){
-        choice = prompt("ERROR_2(check): Please type rock, paper or scissors ")
-        
-        while(choice == null || choice == ""){
-            choice = prompt("ERROR_1(null empty): Please type rock, paper or scissors ")
-        }
-        
-        choiceToLower = choice.toLowerCase()
-        check = validateInput(choice);
-    }
-    return choiceToLower;
-}
-
 function getPlayerChoice2(){
     let input = prompt("Type Rock, Paper, or Scissors");
     while(input == null || input == ""){
