@@ -8,10 +8,35 @@
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <button>rock</button>
-    <button>paper</button>
-    <button>scissors</button>
+    
+    <div class="score">
+        <h1 class="ties">Ties: 0</h1>
+    </div>
+    <div class="winnerDiv">
+        <h1 class="winner"></h1>
+        <button class="reset" onclick="resetGame()">Play Again?</button>
+    </div>
+    <div class="playerSection">
+        <h3 class="playerSelection"></h3>
+        <h3 class="playerScore">Score: 0</h3>
 
-    <script src="script.js"></script>
+        <div class="playerBtns">
+            <button class="btn" id="rock">rock</button>
+            <button class="btn" id="paper">paper</button>
+            <button class="btn" id="scissors">scissors</button>
+        </div>
+    </div>
+    <div class="computerSection">
+        <h3 class="computerSelection"></h3>
+        <h3 class="computerScore">Score: 0</h3>
+
+        <div class="computerBtns">
+            <button class="rock btn">rock</button>
+            <button class="paper btn">paper</button>
+            <button class="scissors btn">scissors</button>
+        </div>
+    </div>
+    
 </body>
+<script src="script.js"></script>
 </html>
